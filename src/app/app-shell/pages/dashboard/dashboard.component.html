@@ -1,3 +1,34 @@
 <admin-page-header [title]="'Moin Page!!'"></admin-page-header>
-<admin-pannel-list [data]="paneldata"></admin-pannel-list>
-<admin-table [size]="3" [data]="tabledata"></admin-table>
+<admin-pannel-list>
+  <admin-pannel
+    *ngFor="let itm of (paneldata$ | async)"
+    [data]="itm"
+  ></admin-pannel>
+</admin-pannel-list>
+<admin-table [size]="3" [data]="tabledata$"></admin-table>
+<admin-container [title]="'Recent Comments'">
+  <admin-comments [data]="comments$"></admin-comments>
+</admin-container>
+<admin-container [title]="'General Stats'">
+  <admin-progress-bar
+    *ngFor="let data of (stats$ | async)"
+    [data]="data"
+  ></admin-progress-bar>
+</admin-container>
+
+<admin-container [title]="'Users'">
+  <admin-list>
+    <admin-user-list-item
+      *ngFor="let user of (users$ | async)"
+      [user]="user"
+    ></admin-user-list-item>
+  </admin-list>
+</admin-container>
+
+<br />
+<admin-page-footer>
+  <admin-content-table
+    *ngFor="let content of (content$ | async)"
+    [content]="content"
+  ></admin-content-table>
+</admin-page-footer>

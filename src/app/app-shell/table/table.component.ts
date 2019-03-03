@@ -1,4 +1,6 @@
 import { Component, OnChanges, Input, SimpleChanges } from '@angular/core';
+import { Observable } from 'rxjs';
+import { ITabledata, ITableResponse } from 'src/app/tabledata';
 
 @Component({
   selector: 'admin-table',
@@ -8,7 +10,7 @@ import { Component, OnChanges, Input, SimpleChanges } from '@angular/core';
 export class TableComponent implements OnChanges {
   @Input() size: 1 | 2 | 3;
   @Input() title: string;
-  @Input() data;
+  @Input() data: Observable<ITableResponse>;
   width: '' | 'w3-third' | 'w3-twothird' = '';
   constructor() {}
   ngOnChanges(changes: SimpleChanges): void {

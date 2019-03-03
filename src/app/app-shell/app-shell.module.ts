@@ -10,6 +10,13 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { PannelListComponent } from './pannel-list/pannel-list.component';
 import { PannelComponent } from './pannel/pannel.component';
 import { TableComponent } from './table/table.component';
+import { CommentsComponent } from './comments/comments.component';
+import { ProgressBarComponent } from './progress-bar/progress-bar.component';
+import { ContainerComponent } from './container/container.component';
+import { ListComponent } from './list/list.component';
+import { UserListItemComponent } from './user-list-item/user-list-item.component';
+import { PageFooterComponent } from './page-footer/page-footer.component';
+import { ContentTableComponent } from './content-table/content-table.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +27,14 @@ import { TableComponent } from './table/table.component';
     DashboardComponent,
     PannelListComponent,
     PannelComponent,
-    TableComponent
+    TableComponent,
+    CommentsComponent,
+    ProgressBarComponent,
+    ContainerComponent,
+    ListComponent,
+    UserListItemComponent,
+    PageFooterComponent,
+    ContentTableComponent
   ],
   exports: [
     TopNavComponent,
@@ -29,7 +43,14 @@ import { TableComponent } from './table/table.component';
     PageHeaderComponent,
     PannelListComponent,
     PannelComponent,
-    TableComponent
+    TableComponent,
+    CommentsComponent,
+    ProgressBarComponent,
+    ContainerComponent,
+    ListComponent,
+    UserListItemComponent,
+    PageFooterComponent,
+    ContentTableComponent
   ],
   imports: [CommonModule, AppShellRoutingModule]
 })

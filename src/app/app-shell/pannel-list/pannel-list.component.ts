@@ -6,7 +6,6 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./pannel-list.component.scss']
 })
 export class PannelListComponent implements OnInit {
-  @Input() data;
   constructor() {}
 
   ngOnInit() {}

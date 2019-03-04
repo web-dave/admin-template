@@ -6,7 +6,6 @@ import { TopNavComponent } from './top-nav/top-nav.component';
 import { SideNavComponent } from './side-nav/side-nav.component';
 import { AppShellComponent } from './app-shell.component';
 import { PageHeaderComponent } from './page-header/page-header.component';
-import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { PannelListComponent } from './pannel-list/pannel-list.component';
 import { PannelComponent } from './pannel/pannel.component';
 import { TableComponent } from './table/table.component';
@@ -17,6 +16,7 @@ import { ListComponent } from './list/list.component';
 import { UserListItemComponent } from './user-list-item/user-list-item.component';
 import { PageFooterComponent } from './page-footer/page-footer.component';
 import { ContentTableComponent } from './content-table/content-table.component';
+import { InputComponent } from './input/input.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +24,6 @@ import { ContentTableComponent } from './content-table/content-table.component';
     SideNavComponent,
     AppShellComponent,
     PageHeaderComponent,
-    DashboardComponent,
     PannelListComponent,
     PannelComponent,
     TableComponent,
@@ -34,7 +33,8 @@ import { ContentTableComponent } from './content-table/content-table.component';
     ListComponent,
     UserListItemComponent,
     PageFooterComponent,
-    ContentTableComponent
+    ContentTableComponent,
+    InputComponent
   ],
   exports: [
     TopNavComponent,
@@ -50,7 +50,8 @@ import { ContentTableComponent } from './content-table/content-table.component';
     ListComponent,
     UserListItemComponent,
     PageFooterComponent,
-    ContentTableComponent
+    ContentTableComponent,
+    InputComponent
   ],
   imports: [CommonModule, AppShellRoutingModule]
 })

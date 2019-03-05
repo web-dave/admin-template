@@ -8,8 +8,15 @@ I will use this for talks and demoing the Angular CLI
 
 ### Play with it
 
-- clone and npm istall it to your computer.
-- run `npm run rest` to start the backend
-- run `ng s` to kick of the dev Server
+- clone it: `git clone https://github.com/web-dave/admin-template.git`
+- install it: `npm i`
+- start the backend: `npm run rest`
+- kick of the dev Server: `ng s -o`
 
 <img src="https://github.com/web-dave/admin-template/blob/master/admin-template.png" />
+
+### ToDo:
+
+- Tests (If this bekomes productive)
+- Datepicker
+- Alerts

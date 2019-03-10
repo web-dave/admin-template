@@ -17,6 +17,7 @@ import { UserListItemComponent } from './user-list-item/user-list-item.component
 import { PageFooterComponent } from './page-footer/page-footer.component';
 import { ContentTableComponent } from './content-table/content-table.component';
 import { InputComponent } from './input/input.component';
+import { ProgressCircleComponent } from './progress-circle/progress-circle.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { InputComponent } from './input/input.component';
     UserListItemComponent,
     PageFooterComponent,
     ContentTableComponent,
-    InputComponent
+    InputComponent,
+    ProgressCircleComponent
   ],
   exports: [
     TopNavComponent,
@@ -51,7 +53,8 @@ import { InputComponent } from './input/input.component';
     UserListItemComponent,
     PageFooterComponent,
     ContentTableComponent,
-    InputComponent
+    InputComponent,
+    ProgressCircleComponent
   ],
   imports: [CommonModule, AppShellRoutingModule]
 })

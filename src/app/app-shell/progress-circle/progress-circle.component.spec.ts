@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DatePickerComponent } from './date-picker.component';
+import { ProgressCircleComponent } from './progress-circle.component';
 
-describe('DatePickerComponent', () => {
-  let component: DatePickerComponent;
-  let fixture: ComponentFixture<DatePickerComponent>;
+describe('ProgressCircleComponent', () => {
+  let component: ProgressCircleComponent;
+  let fixture: ComponentFixture<ProgressCircleComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ DatePickerComponent ]
+      declarations: [ ProgressCircleComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(DatePickerComponent);
+    fixture = TestBed.createComponent(ProgressCircleComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

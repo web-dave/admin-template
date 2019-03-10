@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { ViewsComponent } from './pages/views/views.component';
+import { ProgressComponent } from './pages/progress/progress.component';
 
 const routes: Routes = [
   {
@@ -16,6 +17,10 @@ const routes: Routes = [
   {
     path: 'views',
     component: ViewsComponent
+  },
+  {
+    path: 'progress',
+    component: ProgressComponent
   }
 ];
 

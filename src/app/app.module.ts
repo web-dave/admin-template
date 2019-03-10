@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { AppShellModule } from './app-shell/app-shell.module';
 import { DashboardModule } from './pages/dashboard/dashboard.module';
 import { ViewsModule } from './pages/views/views.module';
+import { ProgressModule } from './pages/progress/progress.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -16,7 +17,8 @@ import { ViewsModule } from './pages/views/views.module';
     AppShellModule,
     HttpClientModule,
     DashboardModule,
-    ViewsModule
+    ViewsModule,
+    ProgressModule
   ],
   providers: [],
   bootstrap: [AppComponent]
